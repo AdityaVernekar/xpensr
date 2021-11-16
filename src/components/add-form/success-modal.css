@@ -1,0 +1,19 @@
+.modal-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-inner img {
+  width: 300px;
+  height: 300px;
+}
+.home {
+  cursor: pointer;
+}
+
+.home i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

@@ -1,12 +1,13 @@
 import React from "react";
-// import ExpenseList from "../../components/expense-list/ExpenseList";
-import Topfold from "../../components/topfold/Topfold";
+import AddForm from "../../components/add-form/AddForm";
 
+import Topfold from "../../components/topfold/Topfold";
+import "./add-expense.css";
 const AddExpense = () => {
   return (
-    <div>
+    <div className="center">
       <Topfold />
-      {/* <ExpenseList /> */}
+      <AddForm />
     </div>
   );
 };
