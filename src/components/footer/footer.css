@@ -6,11 +6,10 @@ footer {
   justify-content: center;
   align-items: center;
   padding-bottom: 6px;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-a {
-  color: red;
-}
 a:hover {
-  color: blue;
+  color: #101f1f;
 }
