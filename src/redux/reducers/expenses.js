@@ -13,7 +13,7 @@ const initialState = {
   query: "",
 };
 
-export const expensesReducer = (state = initialState, { type, data, query }) => {
+export const expensesReducer = (state = initialState, { type, data, query, amount }) => {
   switch (type) {
     case ADD_EXPENSE: {
       localStorage.setItem("expense-list", JSON.stringify([...state.expenseList, data]));
