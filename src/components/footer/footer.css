@@ -1,0 +1,16 @@
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6px;
+}
+
+a {
+  color: red;
+}
+a:hover {
+  color: blue;
+}

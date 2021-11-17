@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { toast, ToastContainer } from "react-toastify";
 import { categories } from "../../constants/add-expense";
-import AddExpense from "../../pages/add-expense/AddExpense";
+
 import "react-toastify/dist/ReactToastify.css";
 import "./addform.css";
 import SuccessModal from "./SuccessModal";
+import { addExpense } from "../../redux/actions/expenses";
 const AddForm = () => {
   const cat = categories;
   const [categoryOpen, setcategoryOpen] = useState(false);
@@ -44,13 +45,13 @@ const AddForm = () => {
       return;
     }
     const data = {
-      title,
-      amount,
-      category,
+      title: title,
+      amount: amount,
+      category: category,
       createdAt: new Date(),
     };
-    console.log(data);
-    dispatch(AddExpense(data));
+    // console.log(`hii you data is ${data}`);
+    dispatch(addExpense(data));
     setmodalOpen(true);
   };
   return (
@@ -62,8 +63,8 @@ const AddForm = () => {
         newestOnTop={false}
       />
       {modalOpen && <SuccessModal />}
-      <div className="form-tem">
-        <label htmlFor="">Title</label>
+      <div className="form-item">
+        <label htmlFor="">Title :</label>
         <input
           type="text"
           placeholder="Give a name to your expenditure"

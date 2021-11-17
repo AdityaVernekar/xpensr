@@ -1,7 +1,14 @@
 import React from "react";
+import "./footer.css";
 
 const Footer = () => {
-  return <div></div>;
+  return (
+    <footer>
+      <a href="https://github.com/AdityaVernekar/Xpensr" target="_blank" rel="noreferrer">
+        Click to Check Githuab Repo
+      </a>
+    </footer>
+  );
 };
 
 export default Footer;

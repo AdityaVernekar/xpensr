@@ -1,16 +1,22 @@
-import { ADD_EXPENSE, DEL_EXPENSE } from "../actiontypes/expenses";
+import { ADD_EXPENSE, DEL_EXPENSE, SEARCH_EXPENSE } from "../actiontypes/expenses";
 
 export const addExpense = (data) => {
-  console.log(data);
   return {
     type: ADD_EXPENSE,
-    payload: data,
+    data,
   };
 };
 
 export const deleteExpense = (data) => {
   return {
     type: DEL_EXPENSE,
-    payload: data,
+    data,
+  };
+};
+
+export const searchExpense = (query) => {
+  return {
+    type: SEARCH_EXPENSE,
+    query,
   };
 };
