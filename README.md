@@ -1,6 +1,12 @@
-# Getting Started with Create React App
-An App to track your expenses
-Featues
+
+
+An App to track your expenses and save
+Npm Packages used:
+1. React-Redux
+2. Moment
+3. toastify
+
+Features
 Add/Delete Expenditure details
 
 
